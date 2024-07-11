@@ -9,11 +9,6 @@ export default function About () {
     <div className='about-container'>
       <div className='about-img-box'>
         <img 
-          src={skylar}
-          alt='skylar headshot'
-        >
-        </img>
-        <img 
           src={skylar2}
           alt='skylar headshot'
         >
@@ -22,11 +17,11 @@ export default function About () {
       </div>
       <div className='about-description-box'>
         <div className='description-title'>
-          <h3>
+          <h3 className='lora-unique-700'>
             About
           </h3>
         </div>
-        <p>
+        <p className='lora-unique-400'>
           Welcome to Happy Medium Studio in Victoria, BC. We specialize in custom-made wood furniture, tailored to your unique tastes. 
         </p>
       </div>

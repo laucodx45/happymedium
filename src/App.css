@@ -9,5 +9,5 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: #865D36;
-  height: 100vh;
+  height: 100%;
 }
