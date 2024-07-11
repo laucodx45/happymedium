@@ -1,23 +1,23 @@
 import * as React from 'react';
 import '../styles/About.css';
 // import skylar from '../images/Skylar.jpg';
-import skylar2 from '../images/skylar2.jpg';
+// import skylar2 from '../images/skylar2.jpg';
 
 export default function About () {
 
   return (
     <div className='about-container'>
       <div className='about-img-box'>
-        <img 
+        {/* <img 
           src={skylar2}
           alt='skylar headshot'
         >
-        </img>
+        </img> */}
 
       </div>
       <div className='about-description-box'>
         <div className='description-title'>
-          <h3 className='lora-unique-700'>
+          <h3 className='lora-unique-700' style={{color: 'whitesmoke'}}>
             About
           </h3>
         </div>

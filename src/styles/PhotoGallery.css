@@ -3,6 +3,7 @@
   height: 100%;
   padding: 10px;
   margin: 15px;
+  border-radius: 5px;
 }
 
 .swiper-slide {
@@ -21,4 +22,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-container {
+  margin: 0;
 }

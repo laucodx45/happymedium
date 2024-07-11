@@ -14,18 +14,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  /* height: 50vh; */
   flex-direction: column;
 }
 
 .cover-container img {
-  width: 100%;
+  width: 105%;
   height: 80%; /* Ensure the image covers the container */
   object-fit: cover;
 }
 
 .moto-container {
   margin: 10px;
+  margin-top: 21px;
 }
 .moto-container p {
   margin: 0;
