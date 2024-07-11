@@ -20,9 +20,16 @@ export default function About () {
         </img>
 
       </div>
-      <p>
-        Welcome to Happy Medium Studio in Victoria, BC. We specialize in custom-made wood furniture, tailored to your unique tastes. 
-      </p>
+      <div className='about-description-box'>
+        <div className='description-title'>
+          <h3>
+            About
+          </h3>
+        </div>
+        <p>
+          Welcome to Happy Medium Studio in Victoria, BC. We specialize in custom-made wood furniture, tailored to your unique tastes. 
+        </p>
+      </div>
     </div>
   );
 }

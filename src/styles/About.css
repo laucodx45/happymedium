@@ -12,6 +12,7 @@
 .about-container p {
   padding-left: 10%;
   padding-right: 10%;
+  margin-top: 10px;
 }
 
 .about-container img {
@@ -27,5 +28,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
+}
+
+.description-title {
+  align-self: flex-start;
+  margin-left: 10%;
+}
+.description-title h3 {
+  margin-top: 15px;
+  margin-bottom:0;
 }
