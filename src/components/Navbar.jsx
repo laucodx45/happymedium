@@ -2,25 +2,25 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 // import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import '../styles/Navbar.css';
 
 export default function Navbar() {
   return (
-    <Box className="navbar-box" sx={{ 
-      flexGrow: 1,
-      width: '100%'
-      }} >
-      <AppBar position="static" style={{ backgroundColor: '#3E362E' }}>
+    
+      <AppBar className='navbar-box' position="static" style={{ 
+        backgroundColor: '#3E362E',
+        width: '100%'
+       }}>
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <p className='lora-unique-700'>
             Happy Medium Studio
-          </Typography>
+          </p>
           <IconButton
             size="large"
-            edge="start"
+            edge="end"
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
@@ -29,6 +29,6 @@ export default function Navbar() {
           </IconButton>
         </Toolbar>
       </AppBar>
-    </Box>
+    
   );
 }

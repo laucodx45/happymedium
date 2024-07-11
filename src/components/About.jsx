@@ -1,6 +1,6 @@
 import * as React from 'react';
 import '../styles/About.css';
-import skylar from '../images/Skylar.jpg';
+// import skylar from '../images/Skylar.jpg';
 import skylar2 from '../images/skylar2.jpg';
 
 export default function About () {
