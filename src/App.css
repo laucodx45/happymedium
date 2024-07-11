@@ -7,7 +7,7 @@
 main {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  align-items: center;
   background-color: #865D36;
   height: 100vh;
 }

@@ -1,0 +1,31 @@
+.about-container {
+  display: flex;
+  background-color: #93785b;
+  height: 40%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.about-container p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.about-container img {
+  width: 38%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.about-img-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
