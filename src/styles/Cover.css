@@ -19,7 +19,7 @@
 }
 
 .cover-container img {
-  width: 105%;
+  width: 100%;
   height: 80%; /* Ensure the image covers the container */
   object-fit: cover;
 }
