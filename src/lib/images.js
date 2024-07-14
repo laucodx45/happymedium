@@ -20,3 +20,18 @@ export const images = [
   {src: fourth, alt:"first"},
   {src: fourth, alt:"first"},
 ]
+
+const imageDataStructure = [
+  {
+    src: "firstimage", 
+    alt: "description",
+    id: "uniqueid",
+    caption: "",
+    otherPics: [
+      {src: ""},
+      {src: ""}
+    ]
+
+  }
+]
+

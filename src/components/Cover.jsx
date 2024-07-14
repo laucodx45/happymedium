@@ -8,7 +8,6 @@ import image1 from '../images/Skylar.jpg'
 export default function Cover () {
   return (
     <div className='cover-container'>
-    <img src={image1} alt='' />
       <div className='moto-container'>
         <div style={{
           display: 'flex'
@@ -18,6 +17,7 @@ export default function Cover () {
         <p className="lora-unique-400">furniture | objects</p>
         <p className="lora-unique-400">made from life, for life.</p>
       </div>
+      <img src={image1} alt='' />
     </div>
   )
 }
