@@ -53,3 +53,14 @@
   margin-top: 15px;
   margin-bottom:0;
 }
+
+.about-description-box {
+  width: 100%;
+}
+
+.contact-description {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 10px;
+}
