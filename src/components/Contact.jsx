@@ -18,9 +18,28 @@ export default function Contact () {
       >
         <a style={{
           color: 'white', 
-          marginBottom: '15px',
-          marginTop:'0px'}} className='lora-unique-400' href="mailto:example@mail.com">happy_medium_studio@outlook.com</a>
+          marginBottom: '',
+          marginTop:'0px',
+          textDecoration: 'none'
+          }} className='lora-unique-400' href="mailto:example@mail.com">happy_medium_studio@outlook.com
+        </a>
       </div>  
+      <a
+        style={{
+          color: 'white', 
+          paddingLeft: '10%',
+          marginBottom: '15px',
+          marginTop: '0px',
+          display: 'inline-block',
+          textDecoration: 'none'
+        }}
+        className='lora-unique-400'
+        href="https://www.instagram.com/happy_medium_studio/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
     </div>
   )
 }
