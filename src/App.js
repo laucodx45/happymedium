@@ -4,7 +4,7 @@ import PhotoGallery from './components/PhotoGallery';
 import About from './components/About';
 import Cover from './components/Cover';
 import Footer from './components/Footer';
-
+import Contact from './components/Contact';
 function App() {
   return (
     <div className="App">
@@ -13,6 +13,7 @@ function App() {
         <PhotoGallery/>
         <Cover/>
         <About/>
+        <Contact/>
         <Footer/>
       </main>
       
