@@ -33,7 +33,7 @@ export const newImageData = [
   {
     src: pid1,
     alt: '',
-    id: '1',
+    id: 1,
     caption: '',
     otherPics: [
       {src: pid1a, alt: ''},
