@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination } from 'swiper/modules'
 import '../styles/PhotoGallery.css'
-import {images} from '../lib/images'
+import {newImageData} from '../lib/images'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -18,7 +18,7 @@ export default function PhotoGallery() {
           onSwiper={swiper => console.log(swiper)}
           className='h-96 w-full rounded-lg'
         >
-          {images.map((image, index) => (
+          {newImageData.map((image, index) => (
             <SwiperSlide key={index}>
               <div className='flex h-48 w-full items-center justify-center'>
                 <img
