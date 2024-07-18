@@ -1,8 +1,3 @@
-import first from '../images/coffeetable2.jpg';
-import second from '../images/coffeetable.jpg';
-import third from '../images/desk.jpg';
-import fourth from '../images/woodenbench.jpg';
-
 import pid1 from '../images/photos/happymediumGallery/photo_id1.jpg'
 import pid1a from '../images/photos/happymediumGallery/photo_id1a.jpg'
 import pid1b from '../images/photos/happymediumGallery/photo_id1b.jpg'
@@ -36,18 +31,18 @@ export const newImageData = [
     id: 1,
     caption: '',
     otherPics: [
-      {src: pid1a, alt: ''},
-      {src: pid1b, alt: ''}
+      pid1a,
+      pid1b
     ]
   },
-  {
+  { 
     src: pid2,
     alt: '',
     id: 2,
     caption: '',
     otherPics: [
-      {src: pid2a, alt: ''},
-      {src: pid2b, alt: ''}
+      pid2a,
+      pid2b
     ]
   },
   {
@@ -56,8 +51,8 @@ export const newImageData = [
     id: 3,
     caption: '',
     otherPics: [
-      {src: pid3a, alt: ''},
-      {src: pid3b, alt: ''}
+      pid3a,
+      pid3b
     ]
   },
   {
@@ -66,8 +61,8 @@ export const newImageData = [
     id: 4,
     caption: '',
     otherPics: [
-      {src: pid4a, alt: ''},
-      {src: pid4b, alt: ''}
+      pid4a,
+      pid4b
     ]
   },
   {
@@ -76,8 +71,8 @@ export const newImageData = [
     id: 5,
     caption: '',
     otherPics: [
-      {src: pid5a, alt: ''},
-      {src: pid5b, alt: ''}
+      pid5a,
+      pid5b
     ]
   },
   {
@@ -86,8 +81,8 @@ export const newImageData = [
     id: 6,
     caption: '',
     otherPics: [
-      {src: pid6a, alt: ''},
-      {src: pid6b, alt: ''}
+      pid6a,
+      pid6b
     ]
   },
   {
@@ -96,8 +91,8 @@ export const newImageData = [
     id: 7,
     caption: '',
     otherPics: [
-      {src: pid7a, alt: ''},
-      {src: pid7b, alt: ''}
+      pid7a,
+      pid7b
     ]
   },
   {
@@ -106,8 +101,7 @@ export const newImageData = [
     id: 8,
     caption: '',
     otherPics: [
-      {src: '', alt: ''},
-      {src: '', alt: ''}
+
     ]
   },
   {
@@ -116,20 +110,8 @@ export const newImageData = [
     id: 9,
     caption: '',
     otherPics: [
-      {src: pid9a, alt: ''},
-      {src: pid9b, alt: ''}
+      pid9a,
+      pid9b
     ]
-  },
-]
-      
-      export const images = [
-        {src: third, alt:"first"},
-        {src: first, alt:"first"},
-        {src: second, alt:"first"},
-        {src: fourth, alt:"first"},
-        {src: fourth, alt:"first"},
-        {src: fourth, alt:"first"},
-        {src: fourth, alt:"first"},
-        {src: fourth, alt:"first"},
-        {src: fourth, alt:"first"}
-      ]
+  }
+];    

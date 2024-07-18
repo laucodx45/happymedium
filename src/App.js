@@ -8,11 +8,12 @@ import Contact from './components/Contact';
 import PhotoCollage from './components/PhotoCollage';
 import useApplicationData from './hooks/applicationData';
 import { applicationContext } from './hooks/applicationContext';
+import PhotoDetailsModal from './components/Modal';
 
 function App() {
 
   const {state, dispatch} = useApplicationData();
-
+  
   return (
     <applicationContext.Provider value={{state, dispatch}} >
       <div className="App">
@@ -22,6 +23,7 @@ function App() {
           <Cover/>
           <About/>
           <PhotoCollage/>
+          <PhotoDetailsModal/>
           <Contact/>
           <Footer/>
         </main>   
