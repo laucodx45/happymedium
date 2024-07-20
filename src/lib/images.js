@@ -29,10 +29,10 @@ export const newImageData = [
     src: pid1,
     alt: '',
     id: 1,
-    caption: '',
+    caption: 'The Domino Bench is made with heavy use in mind, with an integrated shoe rack to store your most used footwear. Balancing the sturdy structure with soft rounded profiles, incorporated wedged through mortise and tenons, always a favorite detail',
     otherPics: [
-      pid1a,
-      pid1b
+      { src: pid1a },
+      { src: pid1b }
     ]
   },
   { 
@@ -41,8 +41,8 @@ export const newImageData = [
     id: 2,
     caption: '',
     otherPics: [
-      pid2a,
-      pid2b
+      { src: pid2a },
+      { src: pid2b }
     ]
   },
   {
@@ -51,8 +51,8 @@ export const newImageData = [
     id: 3,
     caption: '',
     otherPics: [
-      pid3a,
-      pid3b
+      { src: pid3a },
+      { src: pid3b }
     ]
   },
   {
@@ -61,8 +61,8 @@ export const newImageData = [
     id: 4,
     caption: '',
     otherPics: [
-      pid4a,
-      pid4b
+      { src: pid4a },
+      { src: pid4b }
     ]
   },
   {
@@ -71,8 +71,8 @@ export const newImageData = [
     id: 5,
     caption: '',
     otherPics: [
-      pid5a,
-      pid5b
+      { src: pid5a },
+      { src: pid5b }
     ]
   },
   {
@@ -81,8 +81,8 @@ export const newImageData = [
     id: 6,
     caption: '',
     otherPics: [
-      pid6a,
-      pid6b
+      { src: pid6a },
+      { src: pid6b }
     ]
   },
   {
@@ -91,8 +91,8 @@ export const newImageData = [
     id: 7,
     caption: '',
     otherPics: [
-      pid7a,
-      pid7b
+      { src: pid7a },
+      { src: pid7b }
     ]
   },
   {
@@ -100,9 +100,7 @@ export const newImageData = [
     alt: '',
     id: 8,
     caption: '',
-    otherPics: [
-
-    ]
+    otherPics: []
   },
   {
     src: pid9,
@@ -110,8 +108,9 @@ export const newImageData = [
     id: 9,
     caption: '',
     otherPics: [
-      pid9a,
-      pid9b
+      { src: pid9a },
+      { src: pid9b }
     ]
   }
-];    
+];
+   

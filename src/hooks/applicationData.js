@@ -4,7 +4,8 @@ import { newImageData } from "../lib/images";
 const initialState = {
   modal: false,
   photoId: null,
-  modalPhotoData: null,
+  modalPhotoData: [],
+  modalPhotoCaption: null
 }
 
 export function reducer(state, action) {
@@ -24,6 +25,11 @@ export function reducer(state, action) {
         ...state,
         modalPhotoData: action.payload,
       }
+    case 'setModalPhotoCaption' :
+      return {
+        ...state,
+        modalPhotoCaption: action.payload
+      }
       default:
       throw new Error();
   }
@@ -34,7 +40,7 @@ const useApplicationData = () => {
 
   const photoIdSearcher = (imageArray, modalPhotoId) => {
     const imageObj = imageArray.find((imgObj) => imgObj.id === parseInt(modalPhotoId));
-    return imageObj ? [imageObj.src, ...imageObj.otherPics] : 'Error, no photos with matching id in images data structure';
+    return imageObj ? [imageObj.caption, {src: imageObj.src}, ...imageObj.otherPics] : 'Error, no photos with matching id in images data structure';
   };
   
 
@@ -48,8 +54,11 @@ const useApplicationData = () => {
   }, [state.modal, state.photoId])
 
   useEffect(() => {
+    const modalPhotoData = photoIdSearcher(newImageData, state.photoId).slice(1)
+    const photoCaption = photoIdSearcher(newImageData, state.photoId)[0]
     if (state.photoId) {
-      dispatch({ type: 'setModalPhotoData', payload: photoIdSearcher(newImageData, state.photoId)})
+      dispatch({ type: 'setModalPhotoData', payload: modalPhotoData})
+      dispatch({type: 'setModalPhotoCaption', payload: photoCaption})
     }
   }, [state.photoId])
   return {state, dispatch}

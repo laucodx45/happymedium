@@ -9,6 +9,7 @@ import PhotoCollage from './components/PhotoCollage';
 import useApplicationData from './hooks/applicationData';
 import { applicationContext } from './hooks/applicationContext';
 import PhotoDetailsModal from './components/Modal';
+import {newImageData} from './lib/images'
 
 function App() {
 
@@ -19,11 +20,12 @@ function App() {
       <div className="App">
         <main>
           <Navbar/>
-          <PhotoGallery/>
+          <PhotoGallery photosArray={newImageData}/>
           <Cover/>
           <About/>
           <PhotoCollage/>
-          <PhotoDetailsModal/>
+          {state.modal && <PhotoDetailsModal/>}
+          
           <Contact/>
           <Footer/>
         </main>   
