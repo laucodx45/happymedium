@@ -30,3 +30,7 @@
   display: flex;
   align-items: center;
 }
+
+.swiper-pagination-fraction{
+  bottom: var(--swiper-pagination-bottom, 18px)
+}

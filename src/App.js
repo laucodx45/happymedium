@@ -25,7 +25,6 @@ function App() {
           <About/>
           <PhotoCollage/>
           {state.modal && <PhotoDetailsModal/>}
-          
           <Contact/>
           <Footer/>
         </main>   

@@ -22,7 +22,7 @@ export default function PhotoDetailsModal() {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>photo id :{state.photoId}</Modal.Title>
+          <Modal.Title>{state.modalPhotoCaption.title}</Modal.Title>
         </Modal.Header>
         {/* <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body> */}
         {/* {state.modalPhotoData && (
@@ -32,10 +32,10 @@ export default function PhotoDetailsModal() {
             ))}
           </div>
         )} */}
-        {state.modalPhotoData && <PhotoGallery modalPhotos={state.modalPhotoData}/>}
+        {state.modalPhotoData && <PhotoGallery modalPhotos={state.modalPhotoData} />}
         
         <ModalBody>
-          {state.modalPhotoCaption}
+          {state.modalPhotoCaption.caption}
         </ModalBody>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

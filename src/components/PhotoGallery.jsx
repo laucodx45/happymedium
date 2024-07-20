@@ -1,20 +1,25 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination } from 'swiper/modules'
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import '../styles/PhotoGallery.css'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import 'swiper/css/autoplay'
+import { applicationContext } from '../hooks/applicationContext'
+import { useContext } from 'react'
 
 export default function PhotoGallery(props) {
   const photoSrc = props.modalPhotos || props.photosArray;
-  // looks like the src is expecting object but the modalPhoto is just an array
+  const {state} = useContext(applicationContext);
 
   return (
     <section className='swiper-container'>
+      {/* <div className={modalStyle? modalStyle: ''}> */}
         <Swiper
           navigation
           pagination={{ type: 'fraction' }}
-          modules={[Navigation, Pagination]}
+          modules={[Navigation, Pagination, Autoplay]}
+          autoplay={!state.modal? {delay: 3000}: ''}
           onSwiper={swiper => console.log(swiper)}
           className='h-96 w-full rounded-lg'
         >
@@ -30,6 +35,7 @@ export default function PhotoGallery(props) {
             </SwiperSlide>
           ))}
         </Swiper>
+      {/* </div> */}
     </section>
   )
 }

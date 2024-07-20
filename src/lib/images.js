@@ -29,6 +29,7 @@ export const newImageData = [
     src: pid1,
     alt: '',
     id: 1,
+    title: 'Domino Bench',
     caption: 'The Domino Bench is made with heavy use in mind, with an integrated shoe rack to store your most used footwear. Balancing the sturdy structure with soft rounded profiles, incorporated wedged through mortise and tenons, always a favorite detail',
     otherPics: [
       { src: pid1a },
@@ -39,7 +40,8 @@ export const newImageData = [
     src: pid2,
     alt: '',
     id: 2,
-    caption: '',
+    title: 'Daily Desk',
+    caption: 'The Daily desk has plenty of space to spread out your projects, durable laminate work surface, slender but sturdy base that you can disassemble into a compact moveable desk. A desk to spend many hours at, working, thinking ,creating.',
     otherPics: [
       { src: pid2a },
       { src: pid2b }
@@ -49,7 +51,8 @@ export const newImageData = [
     src: pid3,
     alt: '',
     id: 3,
-    caption: '',
+    title: 'Thumbnail Bench',
+    caption: 'It’s such an honor to design and build pieces for others with an equal appreciation. A lot of love and care goes into each piece made.',
     otherPics: [
       { src: pid3a },
       { src: pid3b }
@@ -59,7 +62,11 @@ export const newImageData = [
     src: pid4,
     alt: '',
     id: 4,
-    caption: '',
+    title: 'Perch side table',
+    caption: `
+    This one was a little more experimental than my usual, in design and finish. The inspiration stemmed from the observation of birds in how the fly around in search of a nice tree branch or surface to perch on for a moments rest. I image this side table beside a couch, with a lamp perched on it to illuminate inspiration while you sip your morning coffee.
+    My goal is to bring the beauty and calm of nature into your home, finding a balance of human and nature.
+    `,
     otherPics: [
       { src: pid4a },
       { src: pid4b }
@@ -69,7 +76,8 @@ export const newImageData = [
     src: pid5,
     alt: '',
     id: 5,
-    caption: '',
+    title: 'Book-side table',
+    caption: 'Intergrated book storage, for all your favorite reads',
     otherPics: [
       { src: pid5a },
       { src: pid5b }
@@ -79,7 +87,11 @@ export const newImageData = [
     src: pid6,
     alt: '',
     id: 6,
-    caption: '',
+    title: 'Modular audio console',
+    caption: `
+    It's made with the ability to add components and rearrange, as set ups inevitably change and grow over time.
+    The purpose of the spikes is to reduce the surface area of the points of contact between the equipment and the medium they are on. This allows sound waves (vibration) to dissipate and not travel to the floor or speakers etc, creating more sound clarity.
+    `,
     otherPics: [
       { src: pid6a },
       { src: pid6b }
@@ -89,7 +101,8 @@ export const newImageData = [
     src: pid7,
     alt: '',
     id: 7,
-    caption: '',
+    title: 'White ash coffee tables',
+    caption: 'Always a fan of interactive pieces ones you can move around in a number of combinations, adding more depth and connection to the space',
     otherPics: [
       { src: pid7a },
       { src: pid7b }
@@ -99,18 +112,21 @@ export const newImageData = [
     src: pid8,
     alt: '',
     id: 8,
-    caption: '',
+    title: 'White oak coffee table',
+    caption: 'It’s been a privilege to be able to revisit some pieces I’ve made over the years, to see how they age in their environment. This white oak coffee table is aging nicely',
     otherPics: []
   },
   {
     src: pid9,
     alt: '',
     id: 9,
-    caption: '',
+    title: 'Bedside table',
+    caption: 'Made from VG Fir, the design of this was inspired a lot by the grain of the wood. Clean, crisp lines, with a slender stance encourages you to bring only your essential items to the bedside… with an option of having space for the classic ever growing stack of bedside books',
     otherPics: [
       { src: pid9a },
       { src: pid9b }
     ]
   }
 ];
+
    
