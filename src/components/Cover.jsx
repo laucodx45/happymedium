@@ -1,6 +1,6 @@
 import * as React from 'react';
 import '../styles/Cover.css';
-import image1 from '../images/Skylar.jpg'
+// import image1 from '../images/Skylar.jpg'
 // import image2 from '../images/coffeetable2.jpg'
 // import image3 from '../images/woodenbench.jpg'
 
