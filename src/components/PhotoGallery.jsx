@@ -5,12 +5,12 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
-import { applicationContext } from '../hooks/applicationContext'
-import { useContext } from 'react'
+// import { applicationContext } from '../hooks/applicationContext'
+// import { useContext } from 'react'
 
 export default function PhotoGallery(props) {
   const photoSrc = props.modalPhotos || props.photosArray;
-  const {state} = useContext(applicationContext);
+  // const {state} = useContext(applicationContext);
 
   return (
     <section className='swiper-container'>
@@ -19,7 +19,7 @@ export default function PhotoGallery(props) {
           navigation
           pagination={{ type: 'fraction' }}
           modules={[Navigation, Pagination, Autoplay]}
-          autoplay={!state.modal? {delay: 3000}: ''}
+          // autoplay={!state.modal? {delay: 3000}: false}
           onSwiper={swiper => console.log(swiper)}
           className='h-96 w-full rounded-lg'
         >

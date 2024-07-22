@@ -17,7 +17,6 @@ export default function Cover () {
         <p className="lora-unique-400">furniture | objects</p>
         <p className="lora-unique-400">made from life, for life.</p>
       </div>
-      <img src={image1} alt='' />
     </div>
   )
 }
