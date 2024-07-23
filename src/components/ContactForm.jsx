@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import '../styles/ContactForm.css';
-
+import SendIcon from '@mui/icons-material/Send';
+import Button from '@mui/material/Button';
 export const ContactUs = () => {
   const form = useRef();
 
@@ -25,13 +26,22 @@ export const ContactUs = () => {
   return (
     <div className='contactForm-container'>
       <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
+        <div className='contact-input'>
+          <label className='lora-unique-700'>Name</label>
+          <input type="text" name="user_name" />
+        </div>
+        <div className='contact-input'>
+          <label className='lora-unique-700'>Email</label>
+          <input type="email" name="user_email" />
+        </div>
+        <div className='contact-input'>
+          <label className='lora-unique-700'>Message</label>
+          <textarea name="message" />
+        </div>
+        <Button className='lora-unique-700 contact-input' type="submit" value="Send" variant="contained" endIcon={<SendIcon />}>
+          Send
+        </Button>
+        {/* <input  /> */}
       </form>
     </div>
   );
