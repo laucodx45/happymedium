@@ -25,6 +25,10 @@
   width: 100%;
 }
 
+.contact-input textarea {
+  height: 8em;
+}
+
 .contactForm-container button {
   display: flex;
   flex-direction: row;
