@@ -38,7 +38,17 @@ export const ContactUs = () => {
           <label className='lora-unique-700'>Message</label>
           <textarea name="message" />
         </div>
-        <Button className='lora-unique-700 contact-input' type="submit" value="Send" variant="contained" endIcon={<SendIcon />}>
+        <Button 
+        className='lora-unique-700 contact-input' 
+        type="submit" value="Send" 
+        variant="contained" 
+        endIcon={<SendIcon />}
+        sx={{
+          '&:active': {
+            backgroundColor: '#865D36'
+          },
+        }}
+        >
           Send
         </Button>
         {/* <input  /> */}

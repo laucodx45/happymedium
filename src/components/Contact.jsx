@@ -28,7 +28,7 @@ export default function Contact () {
         style={{
           color: 'white', 
           paddingLeft: '10%',
-          marginBottom: '15px',
+          marginBottom: '29px',
           marginTop: '0px',
           display: 'inline-block',
           textDecoration: 'none'

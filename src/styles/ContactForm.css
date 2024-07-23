@@ -11,6 +11,8 @@
   align-items: flex-start;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 29px;
+  margin-bottom: 29px;
 }
 
 .contact-input {
@@ -27,9 +29,11 @@
   display: flex;
   flex-direction: row;
   border-radius: 25px;
-  margin: 5px 0 5px 0;
+  margin: 10px 0 5px 0;
   background-color: #AC8968;
+  width: 40%;
 }
+
 .contactForm-container form label {
   color: white;
 }

@@ -25,8 +25,9 @@
 }
 
 .moto-container {
-  margin: 20px;
-  margin-top: 20px;
+  /* margin: 29px;
+  margin-top: 29px; */
+  padding: 29px 0 29px 0;
 }
 .moto-container p {
   margin: 0;
