@@ -1,7 +1,5 @@
 .contactForm-container {
-  margin: 15px;
   width: 100%;
-  margin-left: 15px;
 }
 
 .contactForm-container form{
@@ -12,27 +10,37 @@
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 29px;
-  margin-bottom: 29px;
+  margin-bottom: 0px;
+  gap: 10px;
 }
 
 .contact-input {
   display: flex;
   flex-direction: column;
   margin: 5px 0 5px 0;
-}
-
-.contact-input input, .contact-input ,textarea  {
   width: 100%;
 }
 
+.contact-input input {
+  width: 100%;
+  border-radius: 13px;
+  height: 3em;
+  padding: 1.5em;
+  background-color: #f0f0f0;
+}
+
 .contact-input textarea {
+  border-radius: 13px;
+  width: 100%;
   height: 8em;
+  padding: 1.5em;
+  background-color: #f0f0f0;
 }
 
 .contactForm-container button {
   display: flex;
   flex-direction: row;
-  border-radius: 25px;
+  border-radius: 13px;
   margin: 10px 0 5px 0;
   background-color: #AC8968;
   width: 40%;
@@ -41,6 +49,21 @@
 .contactForm-container form label {
   color: white;
 }
+
+.submission-message {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.submission-message p {
+  color: white;
+}
+
+.contactForm-container h3 {
+  color: white;
+}
+
+
 .lora-unique-400 {
   font-family: "Lora", serif;
   font-optical-sizing: auto;

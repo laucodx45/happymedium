@@ -1,10 +1,13 @@
-import React, { useRef } from 'react';
+import React, { useRef, useContext } from 'react';
 import emailjs from '@emailjs/browser';
 import '../styles/ContactForm.css';
 import SendIcon from '@mui/icons-material/Send';
 import Button from '@mui/material/Button';
+import { applicationContext } from '../hooks/applicationContext';
 
 export const ContactUs = () => {
+  const {state, dispatch} = useContext(applicationContext);
+
   const form = useRef();
 
   const serviceId = process.env.REACT_APP_YOUR_SERVICE_ID;
@@ -23,8 +26,16 @@ export const ContactUs = () => {
           console.log('Success');
           
           form.current.reset();
+          dispatch({type: 'setFormSubmission', payload: true})
+          setTimeout(() => {
+            dispatch({type: 'setFormSubmission', payload: false})
+          }, 4000)
         },
         (error) => {
+          dispatch({type: 'setFormSubmissionError', payload: true})
+          setTimeout(() => {
+            dispatch({type: 'setFormSubmissionError', payload: false})
+          }, 4000)
           console.log('FAILED...', error.text);
         },
       );
@@ -33,21 +44,20 @@ export const ContactUs = () => {
   return (
     <div className='contactForm-container'>
       <form ref={form} onSubmit={sendEmail}>
+        <h3 className='lora-unique-700'>
+          Contact Form
+        </h3>
         <div className='contact-input'>
-          <label className='lora-unique-700'>Name</label>
-          <input type="text" name="user_name" className='lora-unique-400'/>
+          <input type="text" name="user_name" className='lora-unique-400' required placeholder='name'/>
         </div>
         <div className='contact-input'>
-          <label className='lora-unique-700'>Email</label>
-          <input type="email" name="user_email" className='lora-unique-400'/>
+          <input type="email" name="user_email" className='lora-unique-400' required placeholder='email'/>
         </div>
         <div className='contact-input'>
-          <label className='lora-unique-700'>Phone number</label>
-          <input type="tel" name="user_phone_number" className='lora-unique-400'/>
+          <input type="tel" name="user_phone_number" className='lora-unique-400' placeholder='phone number' />
         </div>
         <div className='contact-input'>
-          <label className='lora-unique-700'>Message</label>
-          <textarea name="message" className='lora-unique-400'/>
+          <textarea id='message-textArea' name="message" className='lora-unique-400' required placeholder='message'/>
         </div>
         <Button 
         className='lora-unique-700 contact-input' 
@@ -55,15 +65,29 @@ export const ContactUs = () => {
         variant="contained" 
         endIcon={<SendIcon />}
         sx={{
-          '&:active': {
+          '&:hover': {
             backgroundColor: '#865D36'
           },
         }}
         >
           Send
         </Button>
-        {/* <input  /> */}
+        {state.formSubmissionStatus && (
+        <div className='submission-message'>
+          <p className='lora-unique-400'>
+            Your message has been successfully sent!
+          </p>
+        </div>
+        )}
+        {state.formSubmissionError && (
+        <div className='submission-message'>
+          <p className='lora-unique-400'>
+           An error has occurred. Please try again.
+          </p>
+        </div>
+        )}
       </form>
+      
     </div>
   );
 };

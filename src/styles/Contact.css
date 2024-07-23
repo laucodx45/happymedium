@@ -2,45 +2,20 @@
   display: flex;
   background-color: #93785b;
   width: 100%;
-  justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 29px;
+  padding-bottom: 29px;
 }
 
 .contact-container p {
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-top: 12px;
-  margin-bottom: 15px;
   color: white;
 }
 
-
-.about-img-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.description-title {
-  align-self: flex-start;
-  margin-left: 10%;
-}
-.description-title h3 {
-  margin-top: 29px;
-  margin-bottom:0;
-}
-
-.contact-cointainer {
-  width: 100%;
-}
-
-.contact-description {
-  display: flex;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-top: 10px;
+.contact-container a {
+  color: white;
 }
 
 .lora-unique-400 {
