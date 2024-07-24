@@ -8,6 +8,7 @@ const initialState = {
   modalPhotoCaption: {},
   formSubmissionStatus: false,
   formSubmissionError: false,
+  modalLoadingStatus: false
 }
 
 export function reducer(state, action) {
@@ -42,6 +43,11 @@ export function reducer(state, action) {
         ...state,
         formSubmissionError: action.payload,
       }
+    case 'setModalLoadingStatus' :
+      return {
+        ...state,
+        modalLoadingStatus: action.payload,
+      }
       default:
       throw new Error();
   }
@@ -54,9 +60,6 @@ const useApplicationData = () => {
     const imageObj = imageArray.find((imgObj) => imgObj.id === parseInt(modalPhotoId));
     return imageObj ? [{title: imageObj.title, caption: imageObj.caption}, {src: imageObj.src}, ...imageObj.otherPics] : 'Error, no photos with matching id in images data structure';
   };
-  
-
-
   
   // if modal is not open, set photoid back to null
   useEffect(() => {
@@ -71,7 +74,11 @@ const useApplicationData = () => {
     const photoTitleCaption = photoSearchResult[0]
     // const photoTitle = photoIdSearcher(newImageData, state.photoId)
     if (state.photoId) {
+
       dispatch({ type: 'setModalPhotoData', payload: modalPhotoData})
+      setTimeout(() => {
+        dispatch({type: 'setModalLoadingStatus', payload: false})
+      },300)
       dispatch({type: 'setModalPhotoCaption', payload: photoTitleCaption})
     }
   }, [state.photoId])

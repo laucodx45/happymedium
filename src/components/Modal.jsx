@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Modal.css';
 import PhotoGallery from './PhotoGallery';
 import { ModalBody } from 'react-bootstrap';
+import Loader from './Spinner';
+
 export default function PhotoDetailsModal() {
 
   const {state, dispatch} = useContext(applicationContext);
@@ -24,7 +26,8 @@ export default function PhotoDetailsModal() {
         <Modal.Header closeButton>
           <Modal.Title className='custom-modal-title lora-unique-700'>{state.modalPhotoCaption.title}</Modal.Title>
         </Modal.Header>
-        {state.modalPhotoData && <PhotoGallery modalPhotos={state.modalPhotoData} />}
+        {!state.modalLoadingStatus && state.modalPhotoData && <PhotoGallery modalPhotos={state.modalPhotoData} />}
+        {state.modalLoadingStatus && <Loader />}
         <ModalBody className="custom-modal-body lora-unique-400">
           {state.modalPhotoCaption.caption}
         </ModalBody>

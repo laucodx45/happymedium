@@ -9,6 +9,7 @@ export default function PhotoCollage () {
   const { dispatch} = useContext(applicationContext);
   const toggleModal = (photoId) => {
     dispatch({type: 'toggleModal'})
+    dispatch({type: 'setModalLoadingStatus', payload: true})
     dispatch({type: 'setPhotoId', payload: photoId})
   }
   return (
