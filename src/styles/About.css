@@ -6,15 +6,20 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  /* margin: 10px; */
+  padding-top: 29px;
+  padding-bottom: 29px;
 }
 
 .about-container p {
   padding-left: 10%;
   padding-right: 10%;
-  margin-top: 12px;
-  margin-bottom: 29px;
   color: white;
+  margin: 0;
+}
+
+#about-p {
+  padding-bottom: 8px;
+  font-size: 20px;
 }
 
 
