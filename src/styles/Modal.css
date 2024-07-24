@@ -3,3 +3,19 @@
   overflow-y: auto;
   background-color: #A69080;
 }
+
+.custom-modal-body {
+  color: white;
+}
+
+.custom-modal-title {
+  color: white;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}

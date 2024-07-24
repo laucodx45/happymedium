@@ -59,24 +59,9 @@
 }
 
 .submission-message p {
-  color: white;
+  color: rgb(17, 17, 17);
 }
 
 .contactForm-container h3 {
   color: white;
-}
-
-
-.lora-unique-400 {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.lora-unique-700 {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
 }

@@ -1,5 +1,4 @@
 .swiper {
-  /* width: 39vh; */
   height: 100%;
   padding: 10px;
   /* margin: 15px; */
@@ -30,7 +29,7 @@
   margin: 0;
   display: flex;
   align-items: center;
-  padding-top: 29px;
+  padding-top: 0;
 }
 
 .swiper-pagination-fraction{

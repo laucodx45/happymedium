@@ -11,4 +11,19 @@ main {
   background-color: #865D36;
   height: 100%;
   width: 100%;
+  font-family: "Lora", serif;
+}
+
+.lora-unique-400 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lora-unique-700 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }

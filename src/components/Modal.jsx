@@ -22,19 +22,10 @@ export default function PhotoDetailsModal() {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{state.modalPhotoCaption.title}</Modal.Title>
+          <Modal.Title className='custom-modal-title lora-unique-700'>{state.modalPhotoCaption.title}</Modal.Title>
         </Modal.Header>
-        {/* <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body> */}
-        {/* {state.modalPhotoData && (
-          <div >
-            {state.modalPhotoData.map((photosrc) => (
-              <img style={{width: '100px'}}key={photosrc} src={photosrc} alt="" />
-            ))}
-          </div>
-        )} */}
         {state.modalPhotoData && <PhotoGallery modalPhotos={state.modalPhotoData} />}
-        
-        <ModalBody>
+        <ModalBody className="custom-modal-body lora-unique-400">
           {state.modalPhotoCaption.caption}
         </ModalBody>
         <Modal.Footer>
