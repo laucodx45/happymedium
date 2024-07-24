@@ -1,11 +1,11 @@
 .swiper {
-  width: 39vh;
+  /* width: 39vh; */
   height: 100%;
   padding: 10px;
   /* margin: 15px; */
   margin-bottom: 0;
   border-radius: 5px;
-  width: 22em;
+  width: 374px;
 }
 
 .swiper-slide {

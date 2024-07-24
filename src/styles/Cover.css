@@ -1,20 +1,8 @@
-/* .cover-container {
-  display: flex;
-  flex-direction: row;
-  height: 40vh;
-}
-
-.cover-container img {
-  width: 100%;
-  object-fit: cover;
-} */
-
 .cover-container {
   position: relative; /* Make the container a positioned element */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 50vh; */
   flex-direction: column;
 }
 
