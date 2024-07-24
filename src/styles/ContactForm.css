@@ -1,6 +1,6 @@
 .contactForm-container {
   width: 100%;
-  height: 60vh;
+  height: 52vh;
 }
 
 .contactForm-container form{
@@ -34,7 +34,9 @@
   border-radius: 13px;
   width: 100%;
   height: 8em;
-  padding: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 13px;
   background-color: #f0f0f0;
 }
 

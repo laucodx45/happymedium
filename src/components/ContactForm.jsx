@@ -48,16 +48,16 @@ export const ContactUs = () => {
           Contact Form
         </h3>
         <div className='contact-input'>
-          <input type="text" name="user_name" className='lora-unique-400' required placeholder='name'/>
+          <input type="text" name="user_name" className='lora-unique-400' required placeholder='name*'/>
         </div>
         <div className='contact-input'>
-          <input type="email" name="user_email" className='lora-unique-400' required placeholder='email'/>
+          <input type="email" name="user_email" className='lora-unique-400' required placeholder='email*'/>
         </div>
+        {/* <div className='contact-input'>
+          <input type="tel" name="user_phone_number" className='lora-unique-400' placeholder='phone number*' />
+        </div> */}
         <div className='contact-input'>
-          <input type="tel" name="user_phone_number" className='lora-unique-400' placeholder='phone number' />
-        </div>
-        <div className='contact-input'>
-          <textarea id='message-textArea' name="message" className='lora-unique-400' required placeholder='message'/>
+          <textarea id='message-textArea' name="message" className='lora-unique-400' required placeholder='message*'/>
         </div>
         <Button 
         className='lora-unique-700 contact-input' 
