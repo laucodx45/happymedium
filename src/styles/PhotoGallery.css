@@ -30,6 +30,7 @@
   margin: 0;
   display: flex;
   align-items: center;
+  padding-top: 29px;
 }
 
 .swiper-pagination-fraction{
