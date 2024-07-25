@@ -10,7 +10,7 @@ export const ContactUs = () => {
 
   const form = useRef();
 
-  const serviceId = process.env.REACT_APP_YOUR_SERVICE_ID;
+  // const serviceId = process.env.REACT_APP_YOUR_SERVICE_ID;
   const templateId = process.env.REACT_APP_YOUR_TEMPLATE_ID
   const publicKey = process.env.REACT_APP_YOUR_PUBLIC_KEY;
 
