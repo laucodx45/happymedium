@@ -6,9 +6,10 @@ const initialState = {
   photoId: null,
   modalPhotoData: [],
   modalPhotoCaption: {},
-  formSubmissionStatus: false,
+  formSubmissionSuccess: false,
   formSubmissionError: false,
-  modalLoadingStatus: false
+  modalLoadingStatus: false,
+  messageModalStatus: false,
 }
 
 export function reducer(state, action) {
@@ -33,10 +34,10 @@ export function reducer(state, action) {
         ...state,
         modalPhotoCaption: action.payload,
       }
-    case 'setFormSubmission' :
+    case 'setFormSubmissionSuccess' :
       return {
         ...state,
-        formSubmissionStatus: action.payload,
+        formSubmissionSuccess: action.payload,
       }
     case 'setFormSubmissionError' :
       return {
@@ -47,6 +48,11 @@ export function reducer(state, action) {
       return {
         ...state,
         modalLoadingStatus: action.payload,
+      }
+    case 'setMessageModalStatus' :
+      return {
+        ...state,
+        messageModalStatus: action.payload,
       }
       default:
       throw new Error();

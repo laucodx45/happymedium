@@ -11,6 +11,7 @@ import { applicationContext } from './hooks/applicationContext';
 import PhotoDetailsModal from './components/Modal';
 import {newImageData} from './lib/images'
 import { ContactUs } from './components/ContactForm';
+import SubmissionMsgModal from './components/SubmissionStatusModal';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <PhotoCollage/>
           {state.modal && <PhotoDetailsModal/>}
           <ContactUs/>
+          <SubmissionMsgModal/>
           <Contact/>
           <Footer/>
         </main>   

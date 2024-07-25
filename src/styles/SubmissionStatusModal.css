@@ -1,0 +1,17 @@
+#submission-status-modal .modal-content {
+  height: 18vh;
+  position: fixed; /* or absolute, depending on your needs */
+  top: 50vh; /* Change this value to move the modal up or down */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  overflow-y: hidden;
+}
+
+#submission-status-modal Button {
+  font-size: small;
+}
+
+#submission-status-modal .modal-header {
+  padding-bottom: 0px;
+}

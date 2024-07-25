@@ -4,7 +4,7 @@ import '../styles/ContactForm.css';
 import SendIcon from '@mui/icons-material/Send';
 import Button from '@mui/material/Button';
 import { applicationContext } from '../hooks/applicationContext';
-
+import SubmissionMsgModal from './SubmissionStatusModal';
 export const ContactUs = () => {
   const {state, dispatch} = useContext(applicationContext);
 
@@ -18,7 +18,7 @@ export const ContactUs = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(serviceId, templateId, form.current, {
+      .sendForm('', templateId, form.current, {
         publicKey: publicKey,
       })
       .then(
@@ -26,16 +26,16 @@ export const ContactUs = () => {
           console.log('Success');
           
           form.current.reset();
-          dispatch({type: 'setFormSubmission', payload: true})
-          setTimeout(() => {
-            dispatch({type: 'setFormSubmission', payload: false})
-          }, 4000)
+          dispatch({type: 'setFormSubmissionSuccess', payload: true})
+          // set modal status to true
+          dispatch({type: 'setMessageModalStatus', payload: true})
+          
         },
         (error) => {
           dispatch({type: 'setFormSubmissionError', payload: true})
-          setTimeout(() => {
-            dispatch({type: 'setFormSubmissionError', payload: false})
-          }, 4000)
+          
+          // set modal status to true
+          dispatch({type: 'setMessageModalStatus', payload: true})
           console.log('FAILED...', error.text);
         },
       );
@@ -80,11 +80,13 @@ export const ContactUs = () => {
         </div>
         )}
         {state.formSubmissionError && (
-        <div className='submission-message'>
-          <p className='lora-unique-400'>
-           An error has occurred. Please try again.
-          </p>
-        </div>
+        // <div className='submission-message'>
+        //   <p className='lora-unique-400'>
+        //    An error has occurred. Please try again.
+        //   </p>
+        // </div>
+        <SubmissionMsgModal message='An error has occurred. Please try again.' />
+          
         )}
       </form>
       
