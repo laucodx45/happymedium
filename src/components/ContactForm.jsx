@@ -4,9 +4,9 @@ import '../styles/ContactForm.css';
 import SendIcon from '@mui/icons-material/Send';
 import Button from '@mui/material/Button';
 import { applicationContext } from '../hooks/applicationContext';
-import SubmissionMsgModal from './SubmissionStatusModal';
+
 export const ContactUs = () => {
-  const {state, dispatch} = useContext(applicationContext);
+  const {dispatch} = useContext(applicationContext);
 
   const form = useRef();
 
@@ -72,7 +72,7 @@ export const ContactUs = () => {
         >
           Send
         </Button>
-        {state.formSubmissionStatus && (
+        {/* {state.formSubmissionStatus && (
         <div className='submission-message'>
           <p className='lora-unique-400'>
             Your message has been successfully sent!
@@ -87,7 +87,7 @@ export const ContactUs = () => {
         // </div>
         <SubmissionMsgModal message='An error has occurred. Please try again.' />
           
-        )}
+        )} */}
       </form>
       
     </div>
