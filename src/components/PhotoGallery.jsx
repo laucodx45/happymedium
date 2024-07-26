@@ -17,7 +17,7 @@ export default function PhotoGallery(props) {
         <Swiper
           navigation
           loop={true}
-          pagination={{ type: 'fraction' }}
+          pagination={{ type: 'bullets' }}
           modules={[Navigation, Pagination, Autoplay]}
           autoplay={{delay: 3000}}
           onSwiper={swiper => console.log(swiper)}

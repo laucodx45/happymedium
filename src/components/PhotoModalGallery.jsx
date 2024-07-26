@@ -17,7 +17,7 @@ export default function PhotoModalGallery(props) {
         <Swiper
           navigation
           loop={true}
-          pagination={{ type: 'fraction' }}
+          pagination={{ type: 'bullets' }}
           modules={[Navigation, Pagination, Autoplay]}
           onSwiper={swiper => console.log(swiper)}
           className='h-96 w-full rounded-lg'
