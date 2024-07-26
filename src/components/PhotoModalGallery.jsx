@@ -13,7 +13,7 @@ export default function PhotoModalGallery(props) {
   // const {dispatch} = useContext(applicationContext);
   
   return (
-    <section className='swiper-container' style={{margin: '30px'}}>
+    <section className='swiper-container' style={{margin: '0 30px'}}>
         <Swiper
           navigation
           loop={true}
