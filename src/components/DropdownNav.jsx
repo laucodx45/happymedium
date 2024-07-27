@@ -42,9 +42,9 @@ function DropdownNav() {
         className='nav-modal'
       >
         <Box sx={style}>
-          <p id="modal-modal-description">Action</p>
-          <p>Another action</p>
-          <p>Something else</p>
+          <p id="modal-modal-description">Contact</p>
+          <p>About</p>
+          <p>Past Projects</p>
         </Box>
       </Modal>
     </div>
