@@ -1,7 +1,8 @@
 import * as React from 'react';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+// import IconButton from '@mui/material/IconButton';
+// import MenuIcon from '@mui/icons-material/Menu';
 import '../styles/Navbar.css';
+import DropdownNav from './DropdownNav';
 
 export default function Navbar() {
   return (
@@ -14,7 +15,7 @@ export default function Navbar() {
           <p className='lora-unique-700'>
             Happy Medium Studio
           </p>
-          <IconButton
+          {/* <IconButton
             size="large"
             edge="end"
             color="inherit"
@@ -22,7 +23,8 @@ export default function Navbar() {
             sx={{ mr: 2, display:'flex' }}
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
+          <DropdownNav/>
         
       </div>
     
