@@ -42,7 +42,7 @@ export const ContactUs = () => {
   };
   
   return (
-    <div className='contactForm-container'>
+    <div className='contactForm-container' id='ContactUs-section'>
       <form ref={form} onSubmit={sendEmail}>
         <h3 className='lora-unique-700'>
           Contact Form

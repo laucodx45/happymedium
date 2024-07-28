@@ -14,7 +14,7 @@ export default function PhotoCollage () {
   }
   return (
     
-    <div className='photoCollage-container'>
+    <div className='photoCollage-container' id='PreviousWork-section'>
       {newImageData.map((photo, index) => (
         <img onClick={
           () => {

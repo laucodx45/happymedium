@@ -24,10 +24,10 @@ function App() {
           <Navbar/>
           <PhotoGallery photosArray={newImageData}/>
           <Cover/>
-          <About/>
-          <PhotoCollage/>
+          <About />
+          <PhotoCollage />
           {state.modal && <PhotoDetailsModal/>}
-          <ContactUs/>
+          <ContactUs />
           <SubmissionMsgModal/>
           <Contact/>
           <Footer/>

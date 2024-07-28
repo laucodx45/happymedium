@@ -4,6 +4,7 @@ import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import MenuIcon from '@mui/icons-material/Menu';
 import '../styles/DropdownNav.css';
+import { Link } from 'react-scroll';
 
 function DropdownNav() {
   const [open, setOpen] = useState(false);
@@ -42,9 +43,15 @@ function DropdownNav() {
         className='nav-modal'
       >
         <Box sx={style}>
-          <p id="modal-modal-description">Contact</p>
-          <p>About</p>
-          <p>Past Projects</p>
+        <Link to="ContactUs-section" smooth={true} duration={200}>
+          <p onClick={handleClose} id="modal-modal-description">Contact</p>
+        </Link>
+        <Link to="About-section" smooth={true} duration={200}>
+          <p onClick={handleClose}>About</p>
+        </Link>
+        <Link to="PreviousWork-section" smooth={true} duration={200}>
+          <p onClick={handleClose}>Past Projects</p>
+        </Link>
         </Box>
       </Modal>
     </div>
