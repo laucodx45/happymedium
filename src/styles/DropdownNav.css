@@ -2,4 +2,14 @@
   top: 162px;
   left: 75%;
   width: 50%;
+  background-color: #A69080;
+}
+
+.nav-modal p {
+  color: white;
+  cursor: pointer;
+} 
+
+.nav-modal p:hover {
+  font-weight: 700;
 }
