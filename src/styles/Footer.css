@@ -9,9 +9,14 @@
 }
 
 .footer-container p {
-  color: rgb(206, 206, 206);
+  color: white;
   font-size: 10px;
-  margin-left: 10px;
   padding-top: 5px;
+  padding-bottom: 5px;
+  padding: 5px 0 5px 10px;
+}
+
+.footer-container .css-xdahfw-MuiSvgIcon-root {
+  font-size: 1.2rem;
 }
 

@@ -43,13 +43,13 @@ function DropdownNav() {
         className='nav-modal'
       >
         <Box sx={style}>
-        <Link to="ContactUs-section" smooth={true} duration={200}>
+        <Link to="ContactUs-section" smooth={true} duration={400}>
           <p className='lora-unique-400' onClick={handleClose} id="modal-modal-description">Contact</p>
         </Link>
-        <Link to="About-section" smooth={true} duration={200}>
+        <Link to="About-section" smooth={true} duration={400}>
           <p className='lora-unique-400' onClick={handleClose}>About</p>
         </Link>
-        <Link to="PreviousWork-section" smooth={true} duration={200}>
+        <Link to="PreviousWork-section" smooth={true} duration={400}>
           <p className='lora-unique-400' onClick={handleClose}>Past Projects</p>
         </Link>
         </Box>

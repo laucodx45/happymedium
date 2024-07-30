@@ -11,7 +11,7 @@ export default function Footer () {
       </p>
       <Link href="https://www.instagram.com/happy_medium_studio/" target="_blank" rel="noopener" >
         <InstagramIcon sx={{
-          color: 'black',
+          color: 'white',
           paddingTop: '3px',
           marginRight:'10px'
         }}/>
