@@ -34,3 +34,9 @@
 .swiper-pagination-fraction{
   bottom: var(--swiper-pagination-bottom, 18px)
 }
+
+@media (min-width: 1024px) {
+  .swiper {
+    width: 31em;
+  }
+}

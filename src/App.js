@@ -22,8 +22,10 @@ function App() {
       <div className="App">
         <main>
           <Navbar/>
-          <PhotoGallery photosArray={newImageData}/>
-          <Cover/>
+          <div className='desktop-container1'>
+            <PhotoGallery photosArray={newImageData}/>
+            <Cover/>
+          </div>
           <About />
           <PhotoCollage />
           {state.modal && <PhotoDetailsModal/>}
