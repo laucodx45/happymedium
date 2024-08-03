@@ -15,8 +15,29 @@ main {
 }
 
 .desktop-container1 {
-  padding-top: 29px;
-  padding-bottom: 29px;
+  /* padding-top: 29px;
+  padding-bottom: 29px; */
+  padding: 40px;
+}
+
+.desktop-container2 {
+  background-color: #93785b;
+  width: 100%;
+}
+
+.about-photos img {
+  display: none;
+  width: 29em;
+  height: 30em;
+  object-fit: cover;
+}
+
+.desktop-container3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 @media (min-width: 1024px) {
@@ -25,7 +46,22 @@ main {
     flex-direction: row-reverse;
     justify-content: space-evenly;
     width: 100%;
+    padding: 40px;
   }
+
+  .about-photos img {
+    display: flex;
+    border-radius: 8px;
+  }
+
+  .desktop-container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 40px;
+  }
+
 }
 
 .lora-unique-400 {

@@ -1,6 +1,7 @@
 .navbar-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   width: 100%;
   /* margin-bottom: 29px; */
@@ -16,4 +17,10 @@
 
 .navbar-box svg {
   color: rgb(233, 233, 233);
+}
+
+@media (min-width: 1024px) {
+  .navbar-box p {
+    font-size: 22px;
+  }
 }

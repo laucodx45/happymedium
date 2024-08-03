@@ -15,15 +15,6 @@ export default function Navbar() {
           <p className='lora-unique-700'>
             Happy Medium Studio
           </p>
-          {/* <IconButton
-            size="large"
-            edge="end"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2, display:'flex' }}
-          >
-            <MenuIcon />
-          </IconButton> */}
           <DropdownNav/>
         
       </div>

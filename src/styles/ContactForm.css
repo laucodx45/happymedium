@@ -1,15 +1,21 @@
 .contactForm-container {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
   min-height: 469px;
+  align-items: center;
+  background-color: #93785b;
 }
 
 .contactForm-container form{
   display: flex;
+  width: 100%;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 10%;
-  margin-right: 10%;
+  /* margin-left: 10%; */
+  padding-left: 10%;
+  padding-right: 10%;
   margin-top: 29px;
   margin-bottom: 0px;
   gap: 10px;
@@ -24,14 +30,14 @@
 
 .contact-input input {
   width: 100%;
-  border-radius: 13px;
+  border-radius: 8px;
   height: 3em;
   padding: 1.5em;
   background-color: #f0f0f0;
 }
 
 .contact-input textarea {
-  border-radius: 13px;
+  border-radius: 8px;
   width: 100%;
   height: 8em;
   padding-left: 1.5em;
@@ -43,7 +49,7 @@
 .contactForm-container button {
   display: flex;
   flex-direction: row;
-  border-radius: 13px;
+  border-radius: 8px;
   margin: 10px 0 5px 0;
   background-color: #AC8968;
   width: 40%;
@@ -66,4 +72,35 @@
 .contactForm-container h3 {
   color: white;
   font-size: 20px;
+}
+
+.Contact-img {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .contactForm-container {
+    width: 100%;
+  }
+
+  .Contact-img {
+    display: flex;
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 2%;
+  }
+
+  .Contact-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 0;
+  }
+  
+  .contactForm-container form {
+    padding-right: 2%;
+  }
+  .contactForm-container h3 {
+    font-size: 25px;
+  }
 }

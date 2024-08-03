@@ -4,6 +4,7 @@ import '../styles/ContactForm.css';
 import SendIcon from '@mui/icons-material/Send';
 import Button from '@mui/material/Button';
 import { applicationContext } from '../hooks/applicationContext';
+import contactFormPic from '../images/contact-form-pic.jpg';
 
 export const ContactUs = () => {
   const {dispatch} = useContext(applicationContext);
@@ -45,7 +46,7 @@ export const ContactUs = () => {
     <div className='contactForm-container' id='ContactUs-section'>
       <form ref={form} onSubmit={sendEmail}>
         <h3 className='lora-unique-700'>
-          Contact Form
+          Inquiry Form
         </h3>
         <div className='contact-input'>
           <input type="text" name="user_name" className='lora-unique-400' required placeholder='name*'/>
@@ -53,9 +54,6 @@ export const ContactUs = () => {
         <div className='contact-input'>
           <input type="email" name="user_email" className='lora-unique-400' required placeholder='email*'/>
         </div>
-        {/* <div className='contact-input'>
-          <input type="tel" name="user_phone_number" className='lora-unique-400' placeholder='phone number*' />
-        </div> */}
         <div className='contact-input'>
           <textarea id='message-textArea' name="message" className='lora-unique-400' required placeholder='message*'/>
         </div>
@@ -72,23 +70,10 @@ export const ContactUs = () => {
         >
           Send
         </Button>
-        {/* {state.formSubmissionStatus && (
-        <div className='submission-message'>
-          <p className='lora-unique-400'>
-            Your message has been successfully sent!
-          </p>
-        </div>
-        )}
-        {state.formSubmissionError && (
-        // <div className='submission-message'>
-        //   <p className='lora-unique-400'>
-        //    An error has occurred. Please try again.
-        //   </p>
-        // </div>
-        <SubmissionMsgModal message='An error has occurred. Please try again.' />
-          
-        )} */}
       </form>
+      <div className='Contact-img lora-unique-400'>
+        <img src={contactFormPic} alt='coffee-table'/>
+      </div>
       
     </div>
   );

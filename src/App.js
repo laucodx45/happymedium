@@ -12,6 +12,8 @@ import PhotoDetailsModal from './components/Modal';
 import {newImageData} from './lib/images'
 import { ContactUs } from './components/ContactForm';
 import SubmissionMsgModal from './components/SubmissionStatusModal';
+import skylar from '../src/images/Skylar.jpg'
+// import skylar2 from '../src/images/skylar2.jpg'
 
 function App() {
 
@@ -26,11 +28,16 @@ function App() {
             <PhotoGallery photosArray={newImageData}/>
             <Cover/>
           </div>
-          <About />
+          <div className='desktop-container2'>
+            <About />
+            <div className='about-photos'>
+              <img id='about-img' src={skylar} alt='skylar building furnitures' />
+            </div>
+          </div>
           <PhotoCollage />
           {state.modal && <PhotoDetailsModal/>}
-          <ContactUs />
           <SubmissionMsgModal/>
+          <ContactUs />
           <Contact/>
           <Footer/>
         </main>   

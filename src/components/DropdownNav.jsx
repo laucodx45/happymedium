@@ -26,6 +26,7 @@ function DropdownNav() {
   return (
     <div style={{display: 'flex'}}>
       <IconButton
+        id='menu-icon'
         size="large"
         edge="end"
         color="inherit"
@@ -54,6 +55,17 @@ function DropdownNav() {
         </Link>
         </Box>
       </Modal>
+      <div id='nav-content-desktop'>
+        <Link to="ContactUs-section" smooth={true} duration={400}>
+          <p className='lora-unique-400' onClick={handleClose} >Contact</p>
+        </Link>
+        <Link to="About-section" smooth={true} duration={400}>
+          <p className='lora-unique-400' onClick={handleClose}>About</p>
+        </Link>
+        <Link to="PreviousWork-section" smooth={true} duration={400}>
+          <p className='lora-unique-400' onClick={handleClose}>Past Projects</p>
+        </Link>
+      </div>
     </div>
   );
 }
