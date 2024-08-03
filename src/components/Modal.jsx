@@ -33,12 +33,15 @@ export default function PhotoDetailsModal() {
         <Modal.Header closeButton>
           <Modal.Title className='custom-modal-title lora-unique-700'>{state.modalPhotoCaption.title}</Modal.Title>
         </Modal.Header>
-        
-        {!state.modalLoadingStatus && state.modalPhotoData && <PhotoModalGallery modalPhotos={state.modalPhotoData} />}
-        {state.modalLoadingStatus && <Loader />}
-        <ModalBody className="custom-modal-body lora-unique-400">
-          {state.modalPhotoCaption.caption}
-        </ModalBody>
+        <div>
+          {!state.modalLoadingStatus && state.modalPhotoData && <PhotoModalGallery modalPhotos={state.modalPhotoData} />}
+          {state.modalLoadingStatus && <Loader />}
+          {!state.modalLoadingStatus && (
+            <ModalBody className="custom-modal-body lora-unique-400">
+              {state.modalPhotoCaption.caption}
+            </ModalBody>
+          )}
+        </div>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
