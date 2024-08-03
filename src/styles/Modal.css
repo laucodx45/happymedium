@@ -1,6 +1,6 @@
-/* .modal-content {
+.modal-content {
   height: 87vh;
-  overflow-y: auto;
+  overflow-y: scroll;
   background-color: #A69080;
 }
 
@@ -18,21 +18,21 @@
 
 .modal-footer {
   border-top: none;
-} */
+}
 
 /* Ensure the modal backdrop covers the whole screen */
 .modal-dialog {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Full viewport height */
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  width: 100vw;
 }
 
 .modal-content {
-  height: 87vh;
-  overflow-y: auto;
+  /* height: 87vh; */
+  overflow-y: scroll;
   background-color: #A69080;
-  width: 80vw; /* Default width */
   max-width: 700px; /* Default max-width */
 }
 
@@ -52,21 +52,25 @@
 .modal-footer {
   border-top: none;
 }
-
+.modal {
+  --bs-modal-margin: 0;
+}
 /* Media queries for responsive design */
 
 /* Tablet view (min-width: 768px) */
 @media (min-width: 768px) {
   .modal-content {
-    width: 80vw; /* Adjust width for tablet view */
-    max-width: 700px; /* Optional: Set a max width for larger tablets */
+    /* width: 80vw; 
+    max-width: 700px;  */
+    
   }
 }
 
 /* Desktop view (min-width: 992px) */
 @media (min-width: 992px) {
   .modal-content {
-    width: 60vw; /* Adjust width for desktop view */
-    max-width: 900px; /* Optional: Set a max width for desktops */
+    /* width: 80vw; 
+    max-width: 900px;  */
   }
 }
+

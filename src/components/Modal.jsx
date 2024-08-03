@@ -24,10 +24,16 @@ export default function PhotoDetailsModal() {
   return (
     <>
 
-      <Modal show={show} onHide={handleClose} animation={true}>
+      <Modal 
+      show={show} 
+      onHide={handleClose} 
+      animation={true}
+      dialogClassName="modal-dialog-centered"
+      >
         <Modal.Header closeButton>
           <Modal.Title className='custom-modal-title lora-unique-700'>{state.modalPhotoCaption.title}</Modal.Title>
         </Modal.Header>
+        
         {!state.modalLoadingStatus && state.modalPhotoData && <PhotoModalGallery modalPhotos={state.modalPhotoData} />}
         {state.modalLoadingStatus && <Loader />}
         <ModalBody className="custom-modal-body lora-unique-400">

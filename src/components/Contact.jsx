@@ -10,7 +10,7 @@ export default function Contact () {
       {/* <p style={{fontSize: '22px'}}>
         Contact
       </p> */}
-      <p className='lora-unique-400' style={{fontSize:'16px',marginBottom: '0px'}}>
+      <p className='lora-unique-400' style={{marginBottom: '0px'}}>
         Skylar Klassen
       </p>
       <div>

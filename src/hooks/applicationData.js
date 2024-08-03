@@ -84,7 +84,7 @@ const useApplicationData = () => {
       dispatch({ type: 'setModalPhotoData', payload: modalPhotoData})
       setTimeout(() => {
         dispatch({type: 'setModalLoadingStatus', payload: false})
-      },300)
+      },600)
       dispatch({type: 'setModalPhotoCaption', payload: photoTitleCaption})
     }
   }, [state.photoId])

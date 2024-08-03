@@ -54,10 +54,12 @@
     padding-left: 10%;
     padding-right: 10%;
   }
-
-  .contact-container {
-    align-items: center;
+  .contact-container p  {
+    font-size: 16px;
   }
+  /* .contact-container {
+    align-items: center;
+  } */
   .footer-div {
     padding-left: 10%;
     padding-right: 10%;
