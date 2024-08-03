@@ -5,7 +5,6 @@ import About from './components/About';
 import Cover from './components/Cover';
 import Footer from './components/Footer';
 import PhotoCollage from './components/PhotoCollage';
-import Contact from './components/Contact';
 import useApplicationData from './hooks/applicationData';
 import { applicationContext } from './hooks/applicationContext';
 import PhotoDetailsModal from './components/Modal';

@@ -10,9 +10,9 @@ export default function Footer () {
         <p>
           Happy Medium Studio
         </p>
-        <p className="lora-unique-400">
+        {/* <p className="lora-unique-400">
           Copyright © 2024 Happy Medium Studio.
-        </p>
+        </p> */}
       </div>
       <Contact/>
       <div className='footer-nav'>

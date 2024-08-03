@@ -1,4 +1,4 @@
-.modal-content {
+/* .modal-content {
   height: 87vh;
   overflow-y: auto;
   background-color: #A69080;
@@ -18,4 +18,55 @@
 
 .modal-footer {
   border-top: none;
+} */
+
+/* Ensure the modal backdrop covers the whole screen */
+.modal-dialog {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+.modal-content {
+  height: 87vh;
+  overflow-y: auto;
+  background-color: #A69080;
+  width: 80vw; /* Default width */
+  max-width: 700px; /* Default max-width */
+}
+
+/* Styling for the modal body and title */
+.custom-modal-body {
+  color: white;
+}
+
+.custom-modal-title {
+  color: white;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+/* Media queries for responsive design */
+
+/* Tablet view (min-width: 768px) */
+@media (min-width: 768px) {
+  .modal-content {
+    width: 80vw; /* Adjust width for tablet view */
+    max-width: 700px; /* Optional: Set a max width for larger tablets */
+  }
+}
+
+/* Desktop view (min-width: 992px) */
+@media (min-width: 992px) {
+  .modal-content {
+    width: 60vw; /* Adjust width for desktop view */
+    max-width: 900px; /* Optional: Set a max width for desktops */
+  }
 }
