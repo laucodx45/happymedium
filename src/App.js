@@ -38,8 +38,9 @@ function App() {
           {state.modal && <PhotoDetailsModal/>}
           <SubmissionMsgModal/>
           <ContactUs />
-          <Contact/>
+          {/* <Contact/> */}
           <Footer/>
+          {/* <FooterExample /> */}
         </main>   
       </div>
     </applicationContext.Provider>

@@ -44,6 +44,7 @@
   padding-right: 1.5em;
   padding-top: 13px;
   background-color: #f0f0f0;
+  resize: none;
 }
 
 .contactForm-container button {
