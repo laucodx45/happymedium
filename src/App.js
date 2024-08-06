@@ -27,7 +27,7 @@ function App() {
             <PhotoGallery photosArray={newImageData}/>
             <Cover/>
           </div>
-          <div className='desktop-container2'>
+          <div  id='About-section' className='desktop-container2'>
             <About />
             <div className='about-photos'>
               <img id='about-img' src={skylar} alt='skylar building furnitures' />

@@ -1,11 +1,12 @@
 .modal-content {
-  height: 87vh;
+  height: 80vh;
   overflow-y: scroll;
   background-color: #A69080;
 }
 
 .custom-modal-body {
   color: white;
+  padding: 10%;
 }
 
 .custom-modal-title {
@@ -33,7 +34,7 @@
   /* height: 87vh; */
   overflow-y: scroll;
   background-color: #A69080;
-  max-width: 700px; /* Default max-width */
+  /* max-width: 700px;  */
 }
 
 /* Styling for the modal body and title */
@@ -68,9 +69,12 @@
 
 /* Desktop view (min-width: 992px) */
 @media (min-width: 992px) {
+  .modal {
+    --bs-modal-width: 700px
+  }
   .modal-content {
-    /* width: 80vw; 
-    max-width: 900px;  */
+    height: 95vh;
   }
 }
+
 

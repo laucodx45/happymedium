@@ -4,7 +4,7 @@ import '../styles/About.css';
 export default function About () {
 
   return (
-    <div id='About-section' className='about-container'>
+    <div  className='about-container'>
         <p id='about-p' className='lora-unique-700' style={{color: 'whitesmoke'}}>
           About
         </p>

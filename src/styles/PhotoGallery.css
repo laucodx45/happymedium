@@ -29,6 +29,7 @@
   display: flex;
   align-items: center;
   padding-top: 0;
+  
 }
 
 .swiper-pagination-fraction{
@@ -38,5 +39,10 @@
 @media (min-width: 1024px) {
   .swiper {
     width: 31em;
+  }
+}
+@media (min-width: 436px) {
+  .swiper-container {
+    margin: 0;
   }
 }

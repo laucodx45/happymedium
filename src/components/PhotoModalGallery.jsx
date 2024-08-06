@@ -5,15 +5,19 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
-// import { applicationContext } from '../hooks/applicationContext'
-// import { useContext } from 'react'
+
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 export default function PhotoModalGallery(props) {
   const photoSrc = props.modalPhotos || props.photosArray;
+
   // const {dispatch} = useContext(applicationContext);
-  
+  // const onLoadAction = () => dispatch({type: 'setModalLoadingStatus', payload: false})
+ 
   return (
-    <section className='swiper-container' style={{margin: '0 30px'}}>
+    <section onload={() => {console.log('loaded');
+    }} className='swiper-container'>
         <Swiper
           navigation
           loop={true}
@@ -25,11 +29,18 @@ export default function PhotoModalGallery(props) {
           {photoSrc.map((image, index) => (
             <SwiperSlide key={index}>
               <div className='flex h-48 w-full items-center justify-center'>
-                <img
-                  src={image.src}
-                  alt={index}
-                  className='max-h-48 max-w-full object-contain'
-                />
+                  <img
+                    src={image.src}
+                    alt={index}
+                    className=''
+                  />
+                  {/* <LazyLoadImage
+                    alt={index}
+                    width={374}
+                    height={400}
+                    className='max-h-48 max-w-full object-contain'
+                    src={image.src} 
+                    effect="blur" /> */}
               </div>
             </SwiperSlide>
           ))}
