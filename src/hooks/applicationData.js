@@ -44,11 +44,6 @@ export function reducer(state, action) {
         ...state,
         formSubmissionError: action.payload,
       }
-    case 'setModalLoadingStatus' :
-      return {
-        ...state,
-        modalLoadingStatus: action.payload,
-      }
     case 'setMessageModalStatus' :
       return {
         ...state,
@@ -82,9 +77,7 @@ const useApplicationData = () => {
     if (state.photoId) {
 
       dispatch({ type: 'setModalPhotoData', payload: modalPhotoData})
-      setTimeout(() => {
-        dispatch({type: 'setModalLoadingStatus', payload: false})
-      },900)
+      
       dispatch({type: 'setModalPhotoCaption', payload: photoTitleCaption})
     }
   }, [state.photoId])

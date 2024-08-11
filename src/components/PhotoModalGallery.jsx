@@ -6,8 +6,6 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
-
 
 export default function PhotoModalGallery(props) {
   const photoSrc = props.modalPhotos || props.photosArray;
@@ -24,24 +22,20 @@ export default function PhotoModalGallery(props) {
           pagination={{ type: 'bullets' }}
           modules={[Navigation, Pagination, Autoplay]}
           onSwiper={swiper => console.log(swiper)}
-          className='h-96 w-full rounded-lg'
+          // className='h-96 w-full rounded-lg'
         >
           {photoSrc.map((image, index) => (
             <SwiperSlide key={index}>
-              <div className='flex h-48 w-full items-center justify-center'>
                   <img
                     src={image.src}
                     alt={index}
                     className=''
+                    loading="lazy"
+                    style={{backgroundColor:'#A69080'}}
+                    width={496}
+                    height={620}
                   />
-                  {/* <LazyLoadImage
-                    alt={index}
-                    width={374}
-                    height={400}
-                    className='max-h-48 max-w-full object-contain'
-                    src={image.src} 
-                    effect="blur" /> */}
-              </div>
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide>
           ))}
         </Swiper>

@@ -5,8 +5,6 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
-// import { applicationContext } from '../hooks/applicationContext'
-// import { useContext } from 'react'
 
 export default function PhotoGallery(props) {
   const photoSrc = props.modalPhotos || props.photosArray;
@@ -21,18 +19,18 @@ export default function PhotoGallery(props) {
           modules={[Navigation, Pagination, Autoplay]}
           autoplay={{delay: 3000}}
           onSwiper={swiper => console.log(swiper)}
-          className='h-96 w-full rounded-lg'
         >
           {photoSrc.map((image, index) => (
             <SwiperSlide key={index}>
-              <div className='flex h-48 w-full items-center justify-center'>
+              
                 <img
-                  // onLoad={handleLoad}
                   src={image.src}
                   alt={index}
-                  className='max-h-48 max-w-full object-contain'
+                  height={620}
+                  width={496}
+                  loading='lazy'
                 />
-              </div>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide>
           ))}
         </Swiper>

@@ -5,9 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Modal.css';
-// import PhotoGallery from './PhotoGallery';
 import { ModalBody } from 'react-bootstrap';
-import Loader from './Spinner';
 import PhotoModalGallery from './PhotoModalGallery';
 
 export default function PhotoDetailsModal() {
@@ -18,7 +16,6 @@ export default function PhotoDetailsModal() {
   const handleClose = () => {
     dispatch({type: 'toggleModal'});
     dispatch({type: 'setModalPhotoData', payload: null})
-    dispatch({type: 'setModalLoadingStatus', payload: false})
   }
   
   return (
@@ -34,13 +31,12 @@ export default function PhotoDetailsModal() {
           <Modal.Title className='custom-modal-title lora-unique-700'>{state.modalPhotoCaption.title}</Modal.Title>
         </Modal.Header>
         <div>
-          {!state.modalLoadingStatus && state.modalPhotoData && <PhotoModalGallery modalPhotos={state.modalPhotoData} />}
-          {state.modalLoadingStatus && <Loader />}
-          {!state.modalLoadingStatus && (
+          { state.modalPhotoData && <PhotoModalGallery modalPhotos={state.modalPhotoData} />}
+          
             <ModalBody className="custom-modal-body lora-unique-400">
               {state.modalPhotoCaption.caption}
             </ModalBody>
-          )}
+          
         </div>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
