@@ -1,12 +1,12 @@
 .modal-content {
-  height: 80vh;
+  height: 75vh;
   overflow-y: scroll;
   background-color: #A69080;
 }
 
 .custom-modal-body {
   color: white;
-  padding: 10%;
+  padding: 2rem;
 }
 
 .custom-modal-title {
@@ -28,13 +28,6 @@
   align-items: center; 
   height: 100vh; 
   width: 100vw;
-}
-
-.modal-content {
-  /* height: 87vh; */
-  overflow-y: scroll;
-  background-color: #A69080;
-  /* max-width: 700px;  */
 }
 
 /* Styling for the modal body and title */

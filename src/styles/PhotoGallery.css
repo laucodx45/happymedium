@@ -36,9 +36,16 @@
   bottom: var(--swiper-pagination-bottom, 18px)
 }
 
+.photoModalGallery-img {
+  height: 55vh;
+}
+
 @media (min-width: 1024px) {
   .swiper {
     width: 31em;
+  }
+  .photoModalGallery-img {
+    height: 80vh;
   }
 }
 @media (min-width: 436px) {

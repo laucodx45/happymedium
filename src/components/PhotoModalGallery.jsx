@@ -29,11 +29,11 @@ export default function PhotoModalGallery(props) {
                   <img
                     src={image.src}
                     alt={index}
-                    className=''
+                    className='photoModalGallery-img'
                     loading="lazy"
                     style={{backgroundColor:'#A69080'}}
-                    width={496}
-                    height={620}
+                    // width={496}
+                    // height={620}
                   />
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide>
