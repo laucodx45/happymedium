@@ -8,6 +8,7 @@
 .nav-modal p {
   color: white;
   cursor: pointer;
+  font-size: 1rem;
 } 
 
 .nav-modal p:hover {

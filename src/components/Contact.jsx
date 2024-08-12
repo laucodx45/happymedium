@@ -7,9 +7,6 @@ export default function Contact () {
 
   return (
     <div className='contact-container'>
-      {/* <p style={{fontSize: '22px'}}>
-        Contact
-      </p> */}
       <p className='lora-unique-400' style={{marginBottom: '0px'}}>
         Skylar Klassen
       </p>

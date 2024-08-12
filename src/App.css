@@ -2,6 +2,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 16px;
+}
+
+:root {
+  --primary-bg-color: #865D36;
+  --secondary-bg-color: #93785b;
+  --tertiary-bg-color: #A69080;
 }
 
 main {
@@ -15,8 +22,6 @@ main {
 }
 
 .desktop-container1 {
-  /* padding-top: 29px;
-  padding-bottom: 29px; */
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -37,7 +42,6 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 
