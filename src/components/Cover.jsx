@@ -12,7 +12,7 @@ export default function Cover () {
         <div style={{
           display: 'flex'
         }}> 
-          <p className="lora-unique-700" id='abbrev-brand-name'>HPY MDM</p>
+          <p className="lora-unique-700" id='abbrev-brand-name'>Forest Forge</p>
         </div>
         <p className="lora-unique-400">furniture | objects</p>
         <p className="lora-unique-400">made from life, for life.</p>

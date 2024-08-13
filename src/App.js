@@ -11,8 +11,7 @@ import PhotoDetailsModal from './components/Modal';
 import {newImageData} from './lib/images'
 import { ContactUs } from './components/ContactForm';
 import SubmissionMsgModal from './components/SubmissionStatusModal';
-import skylar from '../src/images/Skylar.jpg'
-// import skylar2 from '../src/images/skylar2.jpg'
+import skylar from '../src/images/woodenbench.jpg'
 
 function App() {
 

@@ -8,19 +8,17 @@ export default function Contact () {
   return (
     <div className='contact-container'>
       <p className='lora-unique-400' style={{marginBottom: '0px'}}>
-        Skylar Klassen
+        John Doe
       </p>
       <div>
         <Link href="https://www.instagram.com/happy_medium_studio/" target="_blank" rel="noopener" >
           <InstagramIcon className='insta-icon' sx={{
             color: 'white',
-            // paddingTop: '3px',
-            // marginRight:'10px'
           }}/>
         </Link>
         <a
           className='lora-unique-400'
-          href="https://www.instagram.com/happy_medium_studio/"
+          href="https://www.instagram.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -30,8 +28,8 @@ export default function Contact () {
       </div>
       <a 
         className='lora-unique-400' 
-        href="mailto:example@mail.com">
-        happyMediumStudio@outlook.com
+        href="mailto:lau-cody@outlook.com">
+        lau-cody@outlook.com
       </a>
       <a href="tel:+1234567890">+1 (123) 456-789</a>
     </div>

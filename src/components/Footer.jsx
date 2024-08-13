@@ -8,11 +8,8 @@ export default function Footer () {
     <div className='footer-container'>
       <div className='footer-div'>
         <p>
-          Happy Medium Studio
+          Forest Forge
         </p>
-        {/* <p className="lora-unique-400">
-          Copyright © 2024 Happy Medium Studio.
-        </p> */}
       </div>
       <Contact/>
       <div className='footer-nav'>

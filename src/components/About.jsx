@@ -10,11 +10,11 @@ export default function About () {
         </p>
 
         <p className='lora-unique-400 about-mobile-msg'>
-          Welcome to Happy Medium Studio in Victoria, BC. We specialize in custom-made wood furniture, tailored to your unique tastes. 
+          Welcome to Forest Forge in Victoria, BC. We specialize in custom-made wood furniture, tailored to your unique tastes. 
         </p>
         <div className='about-desktop-msg' >
           <p className='lora-unique-400' >
-            Welcome to Happy Medium Studio, nestled in the heart of Victoria, BC. We are passionate about creating custom-made wood furniture that perfectly fits your unique tastes and preferences. 
+            Welcome to Forest Forge, nestled in the heart of Victoria, BC. We are passionate about creating custom-made wood furniture that perfectly fits your unique tastes and preferences. 
           </p>
           <p>
           Our commitment to craftsmanship and attention to detail ensures that each piece we create is not only beautiful but also functional and durable.

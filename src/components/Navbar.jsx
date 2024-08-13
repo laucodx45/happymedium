@@ -13,7 +13,7 @@ export default function Navbar() {
        }}>
         
           <p className='lora-unique-700'>
-            Happy Medium Studio
+            Forest Forge
           </p>
           <DropdownNav/>
         
