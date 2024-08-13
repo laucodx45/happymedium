@@ -1,10 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules'
 import '../styles/PhotoGallery.css'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
+import 'swiper/css/effect-fade';
 
 export default function PhotoGallery(props) {
   const photoSrc = props.modalPhotos || props.photosArray;
@@ -16,7 +17,8 @@ export default function PhotoGallery(props) {
           navigation
           loop={true}
           pagination={{ type: 'bullets' }}
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Navigation, Pagination, Autoplay, EffectFade]}
+          effect={'fade'}
           autoplay={{delay: 3000}}
           onSwiper={swiper => console.log(swiper)}
         >
