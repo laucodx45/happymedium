@@ -164,8 +164,7 @@ export const newImageData = [
     title: 'Stepping stool',
     caption: 'For some lovely folks on Salt Spring, inspired by @msds_. Made with red oak, a species of wood I haven’t worked with much but it felt fitting for the project. The piece of timber chosen had some nice hues of pink and green in it, which ties in well to the pallet of the kitchen it now lives in.',
     otherPics: [
-      { src: pid12a },
-      { src: '' }
+      { src: pid12a }
     ]
   },
 ];
