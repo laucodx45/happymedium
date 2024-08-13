@@ -33,6 +33,8 @@ function App() {
               <img id='about-img' src={skylar} alt='skylar building furnitures' />
             </div>
           </div>
+          <div>
+          </div>
           <PhotoCollage />
           {state.modal && <PhotoDetailsModal/>}
           <SubmissionMsgModal/>

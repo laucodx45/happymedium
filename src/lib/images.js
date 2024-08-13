@@ -23,6 +23,14 @@ import pid8 from '../images/photos/happymediumGallery/photo_id8.jpg'
 import pid9 from '../images/photos/happymediumGallery/photo_id9.jpg'
 import pid9a from '../images/photos/happymediumGallery/photo_id9a.jpg'
 import pid9b from '../images/photos/happymediumGallery/photo_id9b.jpg'
+import pid10 from '../images/photos/happymediumGallery/photo_id10.jpg'
+import pid10a from '../images/photos/happymediumGallery/photo_id10a.jpg'
+import pid10b from '../images/photos/happymediumGallery/photo_id10b.jpg'
+import pid11 from '../images/photos/happymediumGallery/photo_id11.jpg'
+import pid11a from '../images/photos/happymediumGallery/photo_id11a.jpg'
+import pid11b from '../images/photos/happymediumGallery/photo_id11b.jpg'
+import pid12 from '../images/photos/happymediumGallery/photo_id12.jpg'
+import pid12a from '../images/photos/happymediumGallery/photo_id12a.jpg'
       
 export const newImageData = [
   {
@@ -126,7 +134,40 @@ export const newImageData = [
       { src: pid9a },
       { src: pid9b }
     ]
-  }
+  },
+  {
+    src: pid10,
+    alt: '',
+    id: 10,
+    title: 'Engraved serving trays',
+    caption: 'Made these trays over three years ago for @saintceciliavictoria, they are holding up well. It’s nice to see something you’ve made stand up to use and time. Made from hard rock maple, and finished with a natural hard wax oil.',
+    otherPics: [
+      { src: pid10a },
+      { src: pid10b }
+    ]
+  },
+  {
+    src: pid11,
+    alt: '',
+    id: 11,
+    title: 'Wooden bench',
+    caption: 'Making this bench was an exploration of stability, design and material use. Using euro ply and laminate makes for a very stable and durable surface and the base is made from eastern maple, with emphasis on soft and welcoming profiles. Featuring handmade items from some pals, knit wool toque by @stephaniekonkin and a nice little gary oak vessel by @craig__mcwilliam',
+    otherPics: [
+      { src: pid11a },
+      { src: pid11b }
+    ]
+  },
+  {
+    src: pid12,
+    alt: '',
+    id: 12,
+    title: 'Stepping stool',
+    caption: 'For some lovely folks on Salt Spring, inspired by @msds_. Made with red oak, a species of wood I haven’t worked with much but it felt fitting for the project. The piece of timber chosen had some nice hues of pink and green in it, which ties in well to the pallet of the kitchen it now lives in.',
+    otherPics: [
+      { src: pid12a },
+      { src: '' }
+    ]
+  },
 ];
 
    

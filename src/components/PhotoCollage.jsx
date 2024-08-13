@@ -9,9 +9,9 @@ export default function PhotoCollage () {
   const { dispatch} = useContext(applicationContext);
   const toggleModal = (photoId) => {
     dispatch({type: 'toggleModal'})
-    
     dispatch({type: 'setPhotoId', payload: photoId})
   }
+  
   return (
     
     <div className='photoCollage-container' id='PreviousWork-section'>
