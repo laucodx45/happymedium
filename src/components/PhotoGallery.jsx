@@ -26,10 +26,10 @@ export default function PhotoGallery(props) {
                 <img
                   src={image.src}
                   alt={index}
-                  height={500}
-                  width={496}
+                  // height={500}
+                  // width={496}
                   loading='lazy'
-                  className='photoGallery-img-size'
+                  className='photoGallery-img'
                 />
               <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide>

@@ -61,9 +61,9 @@
 }
 
 /* Desktop view (min-width: 992px) */
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .modal {
-    --bs-modal-width: 700px
+    --bs-modal-width: 50vw
   }
   .modal-content {
     height: 95vh;

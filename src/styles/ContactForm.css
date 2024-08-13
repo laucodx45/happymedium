@@ -83,8 +83,9 @@
   .Contact-img {
     display: flex;
     width: 100%;
-    padding-right: 10%;
-    padding-left: 2%;
+    /* padding-right: 10%;
+    padding-left: 2%; */
+    padding: 3rem;
   }
 
   .Contact-img img {
@@ -95,7 +96,8 @@
   }
   
   .contactForm-container form {
-    padding-right: 2%;
+    /* padding-right: 2%; */
+    padding: 3rem;
   }
   .contactForm-container h3 {
     font-size: 25px;

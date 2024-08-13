@@ -12,11 +12,11 @@
 .about-container p {
   color: white;
   margin: 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 #about-p {
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   font-size: 1.25rem;
 }
 

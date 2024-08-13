@@ -22,7 +22,6 @@ export default function PhotoModalGallery(props) {
           pagination={{ type: 'bullets' }}
           modules={[Navigation, Pagination, Autoplay]}
           onSwiper={swiper => console.log(swiper)}
-          // className='h-96 w-full rounded-lg'
         >
           {photoSrc.map((image, index) => (
             <SwiperSlide key={index}>
@@ -32,8 +31,6 @@ export default function PhotoModalGallery(props) {
                     className='photoModalGallery-img'
                     loading="lazy"
                     style={{backgroundColor:'#A69080'}}
-                    // width={496}
-                    // height={620}
                   />
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide>
